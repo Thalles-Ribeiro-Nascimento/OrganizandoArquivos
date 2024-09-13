@@ -42,3 +42,6 @@ for file in arquivos:
         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, sheets, file))
     elif file.lower().endswith((".txt")):
         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, textos, file))
+    else:
+        print("Nenhum arquivo correspondente")
+    
