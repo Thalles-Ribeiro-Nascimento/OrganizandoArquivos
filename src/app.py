@@ -19,10 +19,10 @@ textos = "TXT"
 listDirectory = [powerPoint, imagens, documentos, pdf1, sheets, textos]
 
 # Criando os diretórios
-    # for dir in listDirectory:
-    #     # Comando para criar Diretórios
-    #     os.mkdir(diretorio+dir)
-    #     print(diretorio+dir)
+for dir in listDirectory:
+    # Comando para criar Diretórios
+    os.mkdir(diretorio+dir)
+    print(diretorio+dir)
 
 # Listando os diretórios e arquivos
 arquivos = os.listdir(diretorio)
