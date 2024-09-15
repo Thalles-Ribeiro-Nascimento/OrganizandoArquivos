@@ -1,9 +1,9 @@
-# Importando bibliotecas para gerenciamento/manipulação de arquivos e diretórios
+import re
+import arquivoLista as ler
 import os
 import shutil
-import re
 
-
+# Função para criar espaço entre os print()
 def espaco():
     return print()
 
@@ -25,11 +25,10 @@ espaco()
 # Criando pastas a escolha do usuário
 cont = int(input("Insira o número de diretórios que deseja criar: "))
 listDirectory = []
-    
+
 for i in range(cont):
     directories = input("Insira um nome de pasta: ")
     listDirectory.append(directories)
-listDirectory.sort()
 
 espaco()
 print(listDirectory)

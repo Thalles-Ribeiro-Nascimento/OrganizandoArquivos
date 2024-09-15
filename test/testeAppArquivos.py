@@ -1,75 +1,142 @@
-# Importando bibliotecas para gerenciamento/manipulação de arquivos e diretórios
-import os
-import shutil
+# # Importando bibliotecas para gerenciamento/manipulação de arquivos e diretórios
+# import os
+# import shutil
+# import re
 
 
-# Diretório que deseja alterar
-entry = input("Digite o diretório que deseja organizar: ")
-dir = entry.split()
-caminho = os.path.join(*dir)
-path = "/" + caminho + "/"
-print(path)
+# def espaco():
+#     return print()
 
-
-# Criando pastas a escolha do usuário
-cont = int(input("Insira o número de diretórios que deseja criar: "))
-listDirectory = []
-
-for i in range(cont):
-    if cont > 0:
-        directories = input("Insira um nome de pasta: ")
-        listDirectory.append(directories)
-    else:
-        print("Número de pastas igual a 0")
-        break
-
-# print(f"listDirectory")
-
-# print(listDirectory)
-# powerPoint = "PowerPoint"
-# imagens = "Imagens"
-# documentos = "Word"
-# pdf1 = "PDF"
-# sheets = "Planilhas"
-# textos = "TXT"
-# # Lista de diretórios
-# listDirectory = [powerPoint, imagens, documentos, pdf1, sheets, textos]
-
-# Criando os diretórios
-for dir in listDirectory:
-    # Comando para criar Diretórios
-    os.mkdir(path+dir)
-
-if cont == 1:
-    print("Diretório Criado!")
-
-else:
-    print("Os diretórios foram criados com sucesso!")
+# # Diretório que deseja alterar
+# entry = input("Digite o diretório que deseja organizar (ex: home user Documentos): ")
+# dir = entry.split()
+# caminho = os.path.join(*dir)
+# path = "/" + caminho + "/"
+# print(path)
+# espaco()
 
 # # Listando os diretórios e arquivos
-# arquivos = os.listdir(diretorio)
-#     # print(arquivos)
+# with os.scandir(path) as entries:
+#     files = [entry.name for entry in entries if entry.is_file()]
 
-# # Organizando os arquivos em cada diretório respectivo à extensão
-# for file in arquivos:
-#     if file.lower().endswith((".pptx")):
-#         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, powerPoint, file))
-#     elif file.lower().endswith((".png", ".jpg")):
-#         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, imagens, file))
-#     elif file.lower().endswith((".docx", ".odt")):
-#         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, documentos, file))
-#     elif file.lower().endswith((".pdf")):
-#         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, pdf1, file))
-#     elif file.lower().endswith((".xlsx", ".ods", ".csv")):
-#         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, sheets, file))
-#     elif file.lower().endswith((".txt")):
-#         shutil.move(os.path.join(diretorio, file), os.path.join(diretorio, textos, file))
+# print(f"Lista de arquivos do diretório {path}:\n{files}")
+# espaco()
+
+# pergunta = int(input("O que deseja?\n1- Criar uma pasta com nome do arquivo\n2- Criar uma pasta de acordo com a extensão do arquivo?\nInsira um valor: "))
+
+# if pergunta == 1:
+#     # Criando pastas a escolha do usuário
+#     cont = int(input("Insira o número de diretórios que deseja criar: "))
+#     listDirectory = []
+
+#     for i in range(cont):
+#         directories = input("Insira um nome de pasta: ")
+#         listDirectory.append(directories)
+#     listDirectory.sort()
+
+#     espaco()
+#     print(listDirectory)
+#     espaco()
+
+
+#     # Criando os diretórios
+#     for dir in listDirectory:
+#         # Comando para criar Diretórios
+#         os.mkdir(path+dir)
+
+#     if cont == 1:
+#         print("Diretório Criado!")
+
+#     else:
+#         print("Os diretórios foram criados com sucesso!")
+
+# # Inserindo os arquivos nos diretórios criados, comparando os nomes
+#     for directory in listDirectory:
+#         for file in files:
+#             arquivo = file.lower()
+#             pasta = directory.lower()
+#             comparando = re.search(pasta, arquivo)
+#             if comparando:
+#                 shutil.move(os.path.join(path, file), os.path.join(path, directory, file))
+#                 print(f"Arquivo: {file}\nPasta: {directory}")
+#             else:
+#                 continue
+# elif pergunta == 2:
+#     cont2 = int(input("Insira o número de diretórios que deseja criar: "))
+#     dicPastas = {}
+#     for i in range(cont2):
+#         key = input("Insira o nome da pasta: ")
+#         k = key
+#         value = input("Insira a extensão: ")
+#         v = value
+#         dicPastas = {k:v}
+    
+#     print(dicPastas)
 
 
 
 
-# Criando uma lista com um Input com espaços
-# dir = input("Digite algo: ")
-# dir.split()
 
-# print(dir.split())
+
+
+
+
+
+
+
+
+
+
+
+
+# list1S = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"]
+# list2S = ["Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+
+# for directory in listDirectory:
+#     for file in files:
+#         pasta = directory
+#         arquivo = file
+#         comparando_primeiro_semestre = re.search(pasta, "-1S")
+#         comparando_segundo_semestre = re.searche(pasta, "-2S")
+#         comparando_arquivo = re.search(arquivo, "")
+#         if pasta:
+#             shutil.move(os.path.join(path, arquivo), os.path.join(path, pasta, arquivo))
+#             print(f"Arquivo: {arquivo}\nPasta: {pasta}")
+#         else:
+#             continue
+
+
+
+
+
+
+
+
+
+
+# Inserindo os arquivos nos diretórios criados, comparando os nomes
+# for directory in listDirectory:
+#     for file in files:
+#         arquivo = file.lower()
+#         pasta = directory.lower()
+#         comparando = re.search(pasta, arquivo)
+#         if comparando:
+#             shutil.move(os.path.join(path, file), os.path.join(path, directory, file))
+#             print(f"Arquivo: {file}\nPasta: {directory}")
+#         else:
+#             continue
+        
+
+
+
+
+# pergunta = input("Você deseja criar pastas de acordo com o nome ou extensão do arquivo (Y/N)? ")
+
+# Lista de extensões de arquivos
+# audio = ler.leituraArquivo("audio")
+# comprimido = ler.leituraArquivo("comprimido")
+# documentos = ler.leituraArquivo("documentos")
+# executavel = ler.leituraArquivo("exe")
+# imagens = ler.leituraArquivo("imagens")
+# isos = ler.leituraArquivo("isos")
+# apresentacoes = ler.leituraArquivo("planilhas_apresentacoes")

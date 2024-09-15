@@ -1,0 +1,57 @@
+1. Documentos de Texto
+    .txt: Arquivo de texto simples (Windows, Mac, Linux)
+    .doc/.docx: Documento do Microsoft Word (Windows, Mac)
+    .odt: Documento de texto do OpenDocument (Linux, Windows, Mac)
+    .rtf: Rich Text Format (Windows, Mac)
+
+
+2. Planilhas e Apresentações
+    .xls/.xlsx: Planilha do Microsoft Excel (Windows, Mac)
+    .ods: Planilha do OpenDocument (Linux, Windows, Mac)
+    .ppt/.pptx: Apresentação do Microsoft PowerPoint (Windows, Mac)
+    .odp: Apresentação do OpenDocument (Linux, Windows, Mac)
+
+
+3. Imagens e Gráficos
+    .jpg/.jpeg: Imagem JPEG (Windows, Mac, Linux)
+    .png: Imagem PNG (Windows, Mac, Linux)
+    .gif: Imagem GIF (Windows, Mac, Linux)
+    .svg: Imagem vetorial em formato SVG (Windows, Mac, Linux)
+    .tiff: Imagem TIFF (Windows, Mac)
+
+
+4. Áudio e Vídeo
+    .mp3: Arquivo de áudio MP3 (Windows, Mac, Linux)
+    .wav: Arquivo de áudio WAV (Windows, Mac, Linux)
+    .mp4: Arquivo de vídeo MP4 (Windows, Mac, Linux)
+    .mov: Arquivo de vídeo QuickTime (Mac, também compatível com Windows)
+    .avi: Arquivo de vídeo AVI (Windows, Mac, Linux)
+
+
+5. Arquivos Comprimidos
+    .zip: Arquivo compactado ZIP (Windows, Mac, Linux)
+    .rar: Arquivo compactado RAR (Windows, Mac, Linux)
+    .tar: Arquivo compactado TAR (Linux, também suportado em Mac e Windows)
+    .tar.gz/.tgz: Arquivo compactado TAR com compressão GZIP (Linux, Mac, Windows com software adicional)
+
+
+6. Scripts e Códigos
+    .bat: Arquivo de script em lote (Windows)
+    .sh: Script de shell (Linux, Mac)
+    .py: Script Python (Windows, Mac, Linux)
+    .js: Arquivo de script JavaScript (Windows, Mac, Linux)
+
+
+7. Executáveis e Binários
+    .exe: Arquivo executável (Windows)
+    .dll: Arquivo de biblioteca de link dinâmico (Windows)
+    .app: Aplicativo (Mac)
+    .deb: Pacote de instalação para distribuições baseadas em Debian (Linux)
+    .rpm: Pacote de instalação para distribuições baseadas em Red Hat (Linux)
+
+    
+8. Outros Arquivos Comuns
+    .pdf: Documento PDF (Windows, Mac, Linux)
+    .iso: Imagem de disco ISO (Windows, Mac, Linux)
+    .dmg: Imagem de disco do macOS (Mac)
+    .log: Arquivo de log (Windows, Mac, Linux)
