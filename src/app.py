@@ -47,7 +47,7 @@ if cont == 1:
 else:
     print("Os diretórios foram criados com sucesso!")
 
-# Inserindo os arquivos nos diretórios criados, comparando os nomes
+# Inserindo os arquivos nos diretórios criados de acordo com a extensão
 for directory in listDirectory:
     for file in files:
         arquivo = file.lower()

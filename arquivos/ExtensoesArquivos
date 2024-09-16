@@ -1,0 +1,13 @@
+".mp3", ".mp4", ".wav", ".mov", ".avi"
+
+".zip", ".rar", ".tar", ".tar.gz", ".tgz"
+
+".txt", ".doc", ".docx", ".odt", ".rtf"
+
+".exe", ".dll", ".app", ".deb", ".rpm"
+
+".jpg", ".jpeg", ".png", ".gif", ".svg", ".tiff"
+
+".iso", ".dmg"
+
+".xls", ".xlsx", ".ods", ".ppt", ".pptx", ".odp"
